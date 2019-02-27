@@ -4,9 +4,17 @@ html {
     
 }
 
+
+body {
+ margin: 0, auto;
+    
+    
+}
+
 h1 {
  color: yellow;   
- 
+ text-align: centre;
+ background-color: #121212;
     
 }
 
