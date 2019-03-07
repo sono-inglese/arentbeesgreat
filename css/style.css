@@ -1,34 +1,109 @@
 html {
-    background: black;
+    background: #baccef;
     font-family: Helvetica, sans-serif;
+}
     
 body {
-    width: auto;
+
+}
     
     
-    }
+.grid {
+    
+
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: repeat(4, 300px);
+
+}
+
+
+.container {
+    
+
     
     
 }
+
+.extra {
+  position: fixed;
+  height: 300px;
+  z-index: 3;
+    
+    
+}
+  
+.b {
+    
+  grid-area: 1 / 2 / span 2 / span 1;
+
+    
+}
+
+
+
+.f{
+    
+    
+  grid-area: 3 / 2 / span 1 / span 1;
+    
+}
+
 
 .picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-    
+  width: 90%;
+  height: 90%
+  z-index: 1;
 }
 
-.intro {
- position: relative;
- margin: 0 auto;
+.intropic {
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthidium_February_2008-1.jpg/800px-Anthidium_February_2008-1.jpg);
+  background-position: center;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
 }
 
 h1 {
- color: yellow;   
- text-align: center;
+ color: white;   
+ text-align: left;
  background-color: #121212;
- font-size: 38px;
+ font-size: 30 px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 0px;
+ padding: 0px 5px;
+ line-height: 100px;
+ font-family: "Courier New", Courier, monospace;
+ font-weight: bold;
+    
+}
+
+.largepicture {
+  display: inline-block;
+  width: 20%;
+  padding: 0px;
+  position: relative;
+  top: 100px;
+
+}
+
+
+.left {
+    left: -50px;
+    
+    
+}
+
+.right {
+    right: 50px
+    
     
 }
 
