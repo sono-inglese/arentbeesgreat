@@ -1,5 +1,5 @@
 html {
-    background: #baccef;
+    background-image: linear-gradient(to bottom, rgba(52,20,232,0), rgba(52,20,232,1));
     font-family: Helvetica, sans-serif;
 }
     
@@ -7,36 +7,80 @@ body {
 
 }
     
+.headerpic {
+
+  background-position: center;
+  position: relative;
+  margin-top: 0;
+  
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthidium_February_2008-1.jpg/800px-Anthidium_February_2008-1.jpg');
     
+    
+}
 .grid {
     
-
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
   grid-template-rows: repeat(4, 300px);
 
 }
 
+.transbox {
+    
+ background: rgba(255, 255, 255, 0.3);
+ background-position: center;
+ height: 80%;
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+ 
+.transbox p {
+  font-weight: bold;
+  color: #000000;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  font-size: 30px;
+    
+}
+    
 
 .container {
     
 
     
-    
 }
 
+
+.piccontainer {
+
+  position: relative;
+  margin-top: -100px;    
+}
+
+
+
 .extra {
-  position: fixed;
+  position: absolute;
+  top: 550px;
+  left: 20px;
+  z-index: 0;
   height: 300px;
-  z-index: 3;
-    
+  width: 300px;
+  
     
 }
   
 .b {
     
-  grid-area: 1 / 2 / span 2 / span 1;
-
+  grid-area: 1 / 2 / span 3 / span 1;
+  
     
 }
 
@@ -55,31 +99,25 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  height: 90%
-  z-index: 1;
+  height: 90%;
+  z-index: 2;
 }
 
-.intropic {
+.title {
   
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthidium_February_2008-1.jpg/800px-Anthidium_February_2008-1.jpg);
-  background-position: center;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: absolute;
+  top: 50px;
+  left: 20px;
   z-index: 1;
 }
 
 h1 {
  color: white;   
  text-align: left;
- background-color: #121212;
  font-size: 30 px;
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-top: 0px;
- padding: 0px 5px;
- line-height: 100px;
+
+
+
  font-family: "Courier New", Courier, monospace;
  font-weight: bold;
     
@@ -106,5 +144,7 @@ h1 {
     
     
 }
+
+
 
 
