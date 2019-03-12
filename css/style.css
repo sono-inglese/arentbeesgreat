@@ -11,8 +11,9 @@ body {
 
   background-position: center;
   position: relative;
-  margin-top: 0;
-  
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
